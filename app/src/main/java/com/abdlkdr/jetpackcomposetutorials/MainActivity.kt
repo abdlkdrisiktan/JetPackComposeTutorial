@@ -78,5 +78,7 @@ fun MessageCard(msg: Message) {
             )
         }
     }
-// Lesson 3
 }
+// Lesson 3
+
+// Lesson 4 : Lists and animations
