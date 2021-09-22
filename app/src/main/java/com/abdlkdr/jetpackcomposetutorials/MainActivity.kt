@@ -16,6 +16,7 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+// Lesson 1
 @Composable
 fun MessageCard(name : String) {
     Text(text = "Hello $name This is composable sample")
@@ -27,3 +28,4 @@ fun PreviewMessageCard() {
     MessageCard("Android")
 }
 
+// Lesson 2
