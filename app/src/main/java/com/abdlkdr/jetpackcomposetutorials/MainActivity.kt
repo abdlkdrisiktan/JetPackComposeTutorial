@@ -58,5 +58,5 @@ fun MessageCard(msg: Message) {
             Text(text = msg.body)
         }
     }
-
+// Lesson 3
 }
