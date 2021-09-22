@@ -1,5 +1,6 @@
 package com.abdlkdr.jetpackcomposetutorials
 
+import android.content.res.Configuration
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -59,13 +60,15 @@ fun MessageCard(msg: Message) {
         Spacer(modifier = Modifier.width(8.dp))
 
         Column {
-            Text(text = msg.author,
+            Text(
+                text = msg.author,
                 color = MaterialTheme.colors.secondaryVariant,
-                        style = MaterialTheme.typography.subtitle2
+                style = MaterialTheme.typography.subtitle2
 
             )
             Spacer(modifier = Modifier.height(4.dp))
-            Text(text = msg.body,
+            Text(
+                text = msg.body,
                 style = MaterialTheme.typography.body2
             )
         }
