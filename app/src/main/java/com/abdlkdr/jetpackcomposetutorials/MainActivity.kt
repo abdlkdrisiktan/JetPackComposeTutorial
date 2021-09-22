@@ -65,7 +65,9 @@ fun MessageCard(msg: Message) {
 
             )
             Spacer(modifier = Modifier.height(4.dp))
-            Text(text = msg.body)
+            Text(text = msg.body,
+                style = MaterialTheme.typography.body2
+            )
         }
     }
 // Lesson 3
