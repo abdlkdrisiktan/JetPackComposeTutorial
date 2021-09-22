@@ -35,7 +35,12 @@ fun MessageCard(name: String) {
     Text(text = "Hello $name This is composable sample")
 }
 
-@Preview
+@Preview(name = "Light Mode")
+@Preview(
+    uiMode = Configuration.UI_MODE_NIGHT_YES,
+    showBackground = true,
+    name = "Dark MODE"
+)
 @Composable
 fun PreviewMessageCard() {
     JetPackComposeTutorialsTheme {
