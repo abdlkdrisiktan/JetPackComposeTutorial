@@ -6,6 +6,8 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
@@ -82,3 +84,19 @@ fun MessageCard(msg: Message) {
 // Lesson 3
 
 // Lesson 4 : Lists and animations
+@Composable
+fun Conversation(messages: List<Message>) {
+    LazyColumn {
+        items(messages) { message ->
+            MessageCard(message)
+        }
+    }
+}
+@Preview
+@Composable
+fun PreviewConversation() {
+    JetPackComposeTutorialsTheme {
+        Conversation(SampleData.conversationSample)
+    }
+}
+
